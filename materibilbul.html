@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan dan Pengurangan Bilangan Bulat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Mengatur desain global */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 22px;
+            color: #ff9305;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Section konten utama */
+        main {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px; /* Membatasi lebar konten */
+            margin: 0 auto;   /* Agar konten selalu berada di tengah */
+            text-align: left;
+            flex-grow: 1;     /* Membuat main mengambil sisa ruang vertikal */
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #ff9305;
+            border-bottom: 2px solid #a05c04e7;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #a05c04e7;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            text-align: justify;
+            color: #000000;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #000000;
+        }
+
+        /* Footer diatur dengan flexbox agar selalu di tengah halaman */
+        footer {
+            text-align: center;
+            margin: 20px auto;
+            font-size: 14px;
+            color: #000;
+            width: 100%;
+            display: flex;
+            justify-content: center; /* Menempatkan konten footer di tengah secara horizontal */
+            align-items: center; /* Menempatkan konten footer di tengah secara vertikal */
+            flex-shrink: 0; /* Memastikan footer tidak mengecil */
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Navbar Responsif -->
+    <nav class="navbar navbar-expand-lg bg-warning w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="ProyekWeb.html">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="materibilbul.html">MATERI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mediabilbul.html">MEDIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lkpdbilbul.html">LEMBAR KERJA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tgsbilbul.html">TUGAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">KONTAK</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>Penjumlahan dan Pengurangan Bilangan Bulat</h1>
+    </header>
+
+    <main>
+        <!-- A. Penjumlahan Bilangan Bulat -->
+        <section id="penjumlahan">
+            <h2>A. Penjumlahan Bilangan Bulat</h2>
+
+            <h3>a. Penjumlahan dengan Tanda yang Sama</h3>
+            <p>Jika kedua bilangan memiliki tanda yang sama, kita menjumlahkan nilai absolutnya dan mempertahankan tanda tersebut.</p>
+            <ul>
+                <li><strong>Contoh 1:</strong> (+4) + (+7) = +11</li>
+                <li><strong>Contoh 2:</strong> (−5) + (−9) = -14</li>
+            </ul>
+
+            <h3>b. Penjumlahan dengan Tanda Berbeda</h3>
+            <p>Jika bilangan memiliki tanda yang berbeda, kita kurangi bilangan dengan nilai yang lebih besar, dan hasilnya mengikuti tanda bilangan yang lebih besar.</p>
+            <ul>
+                <li><strong>Contoh 1:</strong> (+8) + (−3) = +5</li>
+                <li><strong>Contoh 2:</strong> (−6) + (+4) = -2</li>
+            </ul>
+            <p><strong>Tips:</strong> Bilangan dengan tanda berbeda akan saling meniadakan, contoh: (+5) + (−5) = 0</p>
+        </section>
+
+        <!-- B. Pengurangan Bilangan Bulat -->
+        <section id="pengurangan">
+            <h2>B. Pengurangan Bilangan Bulat</h2>
+            <p>Pengurangan bilangan bulat dapat diubah menjadi penjumlahan dengan membalik tanda bilangan yang dikurangkan.</p>
+
+            <h3>a. Pengurangan dengan Tanda yang Sama</h3>
+            <ul>
+                <li><strong>Contoh 1:</strong> (+7) − (+5) = +2</li>
+                <li><strong>Contoh 2:</strong> (−6) − (−3) = -3</li>
+            </ul>
+
+            <h3>b. Pengurangan dengan Tanda Berbeda</h3>
+            <ul>
+                <li><strong>Contoh 1:</strong> (+9) − (−4) = +13</li>
+                <li><strong>Contoh 2:</strong> (−7) − (+2) = -9</li>
+            </ul>
+        </section>
+
+        <!-- C. Sifat-sifat Penjumlahan dan Pengurangan -->
+        <section id="sifat">
+            <h2>C. Sifat-Sifat Penjumlahan dan Pengurangan Bilangan Bulat</h2>
+
+            <h3>a. Komutatif (Penjumlahan)</h3>
+            <p>Urutan bilangan tidak mempengaruhi hasil penjumlahan. Contoh: (+3) + (−5) = (−5) + (+3) = −2</p>
+
+            <h3>b. Asosiatif (Penjumlahan)</h3>
+            <p>Cara pengelompokan tidak mempengaruhi hasil penjumlahan. Contoh: (2 + 3) + (−1) = 2 + (3 + (−1)) = 4</p>
+
+            <h3>c. Identitas Penjumlahan</h3>
+            <p>Menambahkan nol tidak mengubah nilai. Contoh: (+5) + 0 = +5</p>
+
+            <h3>d. Invers Penjumlahan</h3>
+            <p>Invers adalah bilangan yang jika dijumlahkan dengan bilangan itu sendiri, hasilnya nol. Contoh: (+7) + (−7) = 0</p>
+        </section>
+
+        <!-- D. Contoh Soal dan Penyelesaian -->
+        <section id="contoh">
+            <h2>D. Contoh Soal dan Penyelesaian</h2>
+            <ul>
+                <li><strong>Contoh 1:</strong> (+8) + (−3) = +5</li>
+                <li><strong>Contoh 2:</strong> (−4) + (−6) = -10</li>
+                <li><strong>Contoh 3:</strong> (+7) − (−2) = +9</li>
+                <li><strong>Contoh 4:</strong> (−5) − (+3) = -8</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Materi Bilangan Bulat Alni_032</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
